@@ -292,4 +292,84 @@ body {
   -moz-transition: ease-in 0.5s;
   -ms-transition: ease-in 0.5s;
   -o-transition: ease-in 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: auto;
+  }
+  .history {
+    display: none;
+  }
+  .all-aitem {
+    min-width: 300px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "row-up" "button";
+  }
+  .memory-btn {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .number {
+    width: 24.9%;
+    height: 16.5%;
+  }
+  .sign {
+    width: 24.9%;
+    height: 16.5%;
+  }
+  .num16 {
+    display: none;
+  }
+  .num6 {
+    order: -3;
+  }
+  .num1 {
+    order: -4;
+  }
+  .num11 {
+    order: -2;
+  }
+  .num21 {
+    order: -1;
+  }
+  .memory {
+    width: 20%;
+    height: 40px;
+  }
+  .memory1, .memory-btn .memory {
+    width: 20%;
+    height: 40px;
+  }
+}
+@media screen and (max-height: 620px) {
+  .number {
+    width: 24.9%;
+    height: 16.5%;
+  }
+  .sign {
+    width: 24.9%;
+    height: 16.5%;
+  }
+  .num16 {
+    display: none;
+  }
+  .num6 {
+    order: -3;
+  }
+  .num1 {
+    order: -4;
+  }
+  .num11 {
+    order: -2;
+  }
+  .num21 {
+    order: -1;
+  }
+}
+@media screen and (max-height: 410px) {
+  .all-aitem {
+    min-height: 410px;
+  }
 }/*# sourceMappingURL=main.css.map */
