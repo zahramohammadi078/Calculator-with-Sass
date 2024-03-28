@@ -1,0 +1,42 @@
+@mixin styleNumSign{
+    width: 19.8%;
+    height: 19.6%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--border);
+
+}
+.button {
+    grid-area: button;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .number {
+
+   @include styleNumSign();
+    background-color: var(--num-background);
+    border-radius: var(--num-border-radius);
+    &:hover{
+        background-color: var(--num-hover);
+    }
+  
+  }
+
+  .sign {
+    
+    @include styleNumSign();
+    background-color: var(--sign-background);
+    border-radius: var(--sign-border-radius);
+    &:hover{
+        background-color: var(--sign-hover);
+    }
+    
+  }

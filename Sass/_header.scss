@@ -1,0 +1,39 @@
+@mixin hoverstyle{
+    background-color: darkgrey;
+    cursor: pointer;
+   
+
+}
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    
+    .text-header {
+        font-size: 14px;
+        padding: 3px 3px 3px 10px;
+        margin-left: 1px;
+      }
+  }
+  
+  
+  
+  .icon-header {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+
+    .icon-close:hover{
+        background-color: red;
+        cursor: pointer;
+       
+    }
+    .icon-restor:hover,
+    .icon-minimize:hover{
+        @include hoverstyle()
+    }
+    
+  }

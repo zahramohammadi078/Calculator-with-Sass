@@ -1,0 +1,97 @@
+@mixin zeroResultTop{
+  margin-top: 1px;
+    text-align: end;
+    margin-right: 30px;
+
+}
+.row-up {
+    grid-area: row-up;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .left-3-item {
+    display: flex;
+    margin-left: 1px;
+    gap: 5px;
+
+    .text-left {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .icon-bar:hover,
+    .icon-keep:hover {
+        background-color: var(--icon-hover);
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      
+  }
+
+  .result-top {
+   
+    @include zeroResultTop();
+    font-size: 25px;
+    color: darkgray;
+  }
+
+  .zero {
+    @include zeroResultTop();
+    font-size: 50px;
+    font-weight: bold;
+   
+  }
+
+  .memory-btn {
+    display: flex;
+
+    .memory1 {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      height: 45px;
+      width: max(50px, 10%);
+    }
+  
+    .memory{
+  
+      @extend .memory1;
+      border-radius: var(--mem-border-rad);
+      cursor: pointer;
+      border-radius: var(--border);
+  
+      &:hover{
+        background-color: var(--mem-hover);
+      }
+  
+    }
+  }
+
+  // .memory1 {
+  //   font-size: 15px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   font-weight: 500;
+  //   height: 45px;
+  //   width: max(50px, 10%);
+  // }
+
+  // .memory{
+
+  //   @extend .memory1;
+  //   border-radius: var(--mem-border-rad);
+  //   cursor: pointer;
+  //   border-radius: var(--border);
+
+  //   &:hover{
+  //     background-color: var(--mem-hover);
+  //   }
+
+  // }
+
+  

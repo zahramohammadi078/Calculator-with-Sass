@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="Sass/main.css">
+  </head>
+  <body class="main">
+    <div class="all-aitem">
+      <div class="header">
+        <div class="text-header">Calculator</div>
+        <div class="icon-header">
+          <div class="icon-close icon-header-left">
+            &#9747;
+          </div>
+
+          <div class="icon-restor icon-header-left">
+            &#9744;
+          </div>
+
+          <div class="icon-minimize icon-header-left">
+            &#9866;
+          </div>
+        </div>
+      </div>
+
+      <div class="row-up">
+        <div class="left-3-item">
+          <div class="icon-bar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="25"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M140-269.231v-33.846h680v33.846H140Zm0-193.846v-33.846h680v33.846H140Zm0-193.846v-33.846h680v33.846H140Z"
+              />
+            </svg>
+          </div>
+
+          <p class="text-left">Standard</p>
+
+          <div class="icon-keep">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="21"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M178.461-200q-24.577 0-41.519-16.942Q120-233.884 120-258.461v-252.308h33.846v252.308q0 10.769 6.923 17.692t17.692 6.923h603.078q10.769 0 17.692-6.923t6.923-17.692v-443.078q0-10.769-6.923-17.692t-17.692-6.923H449.231V-760h332.308q24.577 0 41.519 16.942Q840-726.116 840-701.539v443.078q0 24.577-16.942 41.519Q806.116-200 781.539-200H178.461Zm516.437-120 24.333-24.333-180.718-179.718H675.18v-33.846H481.333v193.846h33.847v-135.667L694.898-320ZM120-600v-160h240v160H120Zm360 120Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="result-top"></div>
+        <p class="zero">0</p>
+        <div class="memory-btn">
+          <div class="memory1 MCbtn" style="color: rgb(167, 174, 175)">MC</div>
+          <div class="memory1 MRbtn" style="color: rgb(167, 174, 175)">MR</div>
+          <div class="memory Mplus">M+</div>
+          <div class="memory Mminus">M-</div>
+          <div class="memory MS">MS</div>
+        </div>
+      </div>
+
+      <div class="button">
+        <div class="num1 sign percent">%</div>
+        <div class="num2 sign CE">CE</div>
+        <div class="num3 sign clear">C</div>
+        <div class="num4 sign delete">
+          <img style="width: 20px; height: 21px;"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"
+                    alt="">
+        </div>
+        <div class="num5 sign operatorH">&#247;</div>
+
+        <div class="num6 sign sqrt">
+          &#8730
+        </div>
+        <div class="num7 number" value="7">7</div>
+        <div class="num8 number" value="8">8</div>
+        <div class="num9 number" value="9">9</div>
+        <div class="num10 sign operatorH">&#215;</div>
+
+        <div class="num11 sign pow2">x<sup>2</sup></div>
+        <div class="num12 number">4</div>
+        <div class="num13 number">5</div>
+        <div class="num14 number">6</div>
+        <div class="num15 sign operatorH">-</div>
+
+        <div class="num16 sign pow3">x<sup>3</sup></div>
+        <div class="num17 number">1</div>
+        <div class="num18 number">2</div>
+        <div class="num19 number">3</div>
+        <div class="num20 sign operatorH">&#43;</div>
+
+        <div class="num21 sign 1x-btn">1/x</div>
+        <div class="num22 sign positiveNegative">+/-</div>
+        <div class="num23 number">0</div>
+        <div class="num24 sign dot">&#8729;</div>
+        <div class="num25 sign equals">&#61;</div>
+      </div>
+      <div class="history">
+        <div class="left-text">
+          <h4 class="his-btn">History</h4>
+          <h4 class="mem-btn">Memory</h4>
+        </div>
+        <div class="memory-div">
+          <p class="memory-text">There`s nothing saved in memory</p>
+          <div class="memory-num"></div>
+        </div>
+        <div class="text-his">
+          <p style="margin-top: 40px" class="p-history">
+            There's no history yet
+          </p>
+        </div>
+        <div class="trash">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-trash3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="func.js"></script>
+    <script src="them.js"></script>
+  
+  </body>
+</html>
