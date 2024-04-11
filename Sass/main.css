@@ -68,10 +68,9 @@
 
 .icon-header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
-  gap: 30px;
-  height: 100%;
-  width: 100%;
 }
 .icon-header .icon-close:hover {
   background-color: red;
@@ -81,6 +80,13 @@
 .icon-header .icon-minimize:hover {
   background-color: darkgrey;
   cursor: pointer;
+}
+
+.icon-header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
 }
 
 .row-up {
@@ -335,12 +341,12 @@ body {
     order: -1;
   }
   .memory {
-    width: 20%;
-    height: 40px;
+    width: 23%;
+    height: 60px;
   }
   .memory1, .memory-btn .memory {
-    width: 20%;
-    height: 40px;
+    width: 23%;
+    height: 60px;
   }
 }
 @media screen and (max-height: 620px) {

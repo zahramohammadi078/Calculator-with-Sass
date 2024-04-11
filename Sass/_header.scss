@@ -20,11 +20,15 @@
   
   
   .icon-header {
-    display: flex;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+
     flex-direction: row-reverse;
-    gap: 30px;
-    height: 100%;
-    width: 100%;
+    // align-items: center;
+    // justify-content: center;
+
+    
 
     .icon-close:hover{
         background-color: red;
@@ -36,4 +40,13 @@
         @include hoverstyle()
     }
     
+  }
+
+  .icon-header-left{
+
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    width: 48px;
+
   }
