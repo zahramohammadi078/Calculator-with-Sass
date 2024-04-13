@@ -45,7 +45,9 @@
   }
 
   .memory-btn {
+    // grid-area: memory-btn;
     display: flex;
+    // max-width: 900px;
 
     .memory1 {
       font-size: 15px;
@@ -54,7 +56,7 @@
       justify-content: center;
       font-weight: 500;
       height: 45px;
-      width: max(50px, 10%);
+      width: max(80px, 10%);
     }
   
     .memory{

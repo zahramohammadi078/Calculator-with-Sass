@@ -138,7 +138,7 @@
   justify-content: center;
   font-weight: 500;
   height: 45px;
-  width: max(50px, 10%);
+  width: max(80px, 10%);
 }
 .memory-btn .memory {
   border-radius: var(--mem-border-rad);
@@ -169,7 +169,7 @@
   cursor: pointer;
   border-radius: var(--border);
   background-color: var(--num-background);
-  border-radius: var(--num-border-radius);
+  transition: ease-in 0.5s;
 }
 .number:hover {
   background-color: var(--num-hover);
@@ -186,7 +186,7 @@
   cursor: pointer;
   border-radius: var(--border);
   background-color: var(--sign-background);
-  border-radius: var(--sign-border-radius);
+  transition: ease-in 0.5s;
 }
 .sign:hover {
   background-color: var(--sign-hover);
